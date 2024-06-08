@@ -155,7 +155,7 @@ int main()
     deleteNode(2,head);
     print(head);
 
-    int k=1;
+    int k=2;
     printknode(head,k);
 
 
