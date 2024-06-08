@@ -108,6 +108,26 @@ void deleteNode(int position, Node* &head){
     }
 }
 
+
+void printknode(Node*head, int k){
+    //base case
+    if(head==NULL){
+        return;    
+    }
+
+    //recursion call with the value k
+
+    printknode(head->next, k);
+
+
+    k--;
+    if(k==0){
+        cout<<head->data<<" ";
+
+    }
+
+}
+
 int main()
 {
     //created a new node
@@ -134,6 +154,9 @@ int main()
 
     deleteNode(2,head);
     print(head);
+
+    int k=1;
+    printknode(head,k);
 
 
 
