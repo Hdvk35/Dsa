@@ -130,7 +130,7 @@ int main()
     // print(head);
 
     insertAtTail(tail,20);
-    print(tail);
+    print1(tail);
 
     deleteNode(2,head);
     print(head);
