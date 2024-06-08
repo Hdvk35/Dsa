@@ -70,6 +70,16 @@ void print(Node* &head){
         cout<<endl;
 }
 
+//print using recursion
+
+void print1(Node* head){
+    if(head == NULL){
+        return;
+}
+cout<<head->data<<" ";
+print1(head->next);
+
+}
 void deleteNode(int position, Node* &head){
     if(position == 1){
             Node*temp = head;
