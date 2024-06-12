@@ -17,7 +17,7 @@ int main(){
     int digit;
     while(m!=0){
         digit =  m%10;
-        sum += digit;
+        sum += digit;  
         m /= 10;
     }
     if(sum==n)
